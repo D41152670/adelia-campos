@@ -1,0 +1,133 @@
+.section__blog
+    
+    &-mobile
+        display: block
+
+        @media screen and ( $break-lg )
+            display: none
+
+    &-desktop
+        display: none
+
+        @media screen and ( $break-lg )
+            display: block
+
+.box-blog-desktop
+    position: relative
+    width: 100%
+    display: block
+    padding: 35px 0
+
+    @media screen and ( $break-lg )
+        margin-top: 50px
+            
+        &::before
+            content: ''
+            position: absolute
+            top: 0
+            left: -3%
+            background-color: $red
+            width: 38%
+            height: 540px
+            border-top-right-radius: 8px
+            border-bottom-right-radius: 8px
+
+    @media screen and ( $break-1366 )
+        
+        &::before
+            left: -11%
+            width: 45%
+
+    @media screen and ( $break-1440 )
+        
+        &::before
+            left: -15%
+            width: 49%
+
+    @media screen and ( $break-1880 )
+        
+        &::before
+            left: -36%
+            width: 69%
+
+.card-blog
+    position: relative
+    width: 100%
+    display: block
+
+    &__horizontal
+        display: flex
+        align-items: flex-start
+        justify-content: space-between
+        margin-bottom: 15px
+
+.image-blog
+    position: relative
+    width: 100%
+    display: block
+
+    &__desktop
+        width: 45%
+
+.content-card-blog
+    position: relative
+    width: 100%
+    display: block
+    background-color: $cardBlog
+    padding: 20px 7px
+    border-bottom-left-radius: 5px
+    border-bottom-right-radius: 5px
+
+    &__desktop
+        width: 70%
+        border-top-left-radius: 0
+        border-top-right-radius: 5px
+        border-bottom-right-radius: 5px
+        border-bottom-left-radius: 0
+
+        @media screen and ( $break-1880 )
+            width: 92%
+            
+        
+
+.category
+    position: relative
+    width: 21%
+
+    @media screen and ( $break-lg )
+        width: 25%
+
+.tag-category
+    background-color: $tag
+    color: $white
+    border-radius: 6px
+    padding: 6px
+
+    @media screen and ( $break-lg )        
+        width: auto
+        background-color: $lightGrey
+        color: $grey
+
+    p
+        font-size: 10px
+        font-weight: 500
+        line-height: 16px
+        margin-bottom: 0
+
+        @media screen and ( $break-lg )
+            font-weight: 700
+
+.desc-blog
+
+    p
+        font-size: 16px
+        font-weight: 500
+        line-height: 25px
+        color: $grey
+        margin-top: 10px
+
+        &.date
+            font-size: 14px
+            font-weight: 700
+            line-height: 16px
+            color: #848484

@@ -1,0 +1,121 @@
+.main-section
+
+    &__single
+
+        &--contato
+            font-style: normal
+            font-weight: bold
+            font-size: 18px
+            line-height: 160%
+            letter-spacing: -0.01em
+            color: #777777
+            margin-bottom: 30px
+
+
+//
+.main-accordion
+    margin-bottom: 20px
+
+    .card-header
+        padding: 0
+
+    &__link
+        display: block
+        width: 100%
+        font-style: normal
+        font-weight: bold
+        font-size: 20px
+        line-height: 150%
+        color: #A43234
+        padding: 15px
+        transition-duration: .7s
+        cursor: pointer
+
+        &:hover
+            background-color: $blue
+            color: white
+
+// diego
+.section
+    position: relative
+    width: 100%
+    padding: 30px 0
+
+    &__team
+        background-color: $blue
+
+    &__action
+        background-color: $lightGrey
+        
+        @media screen and ( $break-lg )            
+            background: linear-gradient(to right, $lightGrey 50%, 0, $white 50%)
+
+.content
+    position: relative
+    width: 100%
+    display: block
+
+    &__equipe, &__action
+
+        p
+            color: $white
+            font-size: 16px
+            font-weight: 400
+            line-height: 24px
+
+        a
+            color: $white
+            font-size: 18px
+            font-weight: 700
+            line-height: 28px
+
+    &__action
+        
+        p
+            color: $grey
+
+.box-title
+    position: relative
+    width: 100%
+    display: block
+
+    &__equipe, &__action
+
+        p
+            color: $white
+            font-size: 16px
+            font-weight: 400
+            line-height: 24px
+
+        a
+            color: $white
+            font-size: 18px
+            font-weight: 700
+            line-height: 28px
+
+    &__action
+        
+        p
+            color: $grey
+
+    &__blog
+        width: 98%
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+
+    &__page
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+        width: 50%
+        padding: 100px 0
+
+.section-title
+    position: relative
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center

@@ -1,0 +1,8 @@
+# IDEs
+.idea
+
+# WordPress
+wp-config.php
+
+#node files
+docroot/wp-content/themes/adelia-campos/gulp/node_modules

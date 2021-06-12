@@ -1,0 +1,9 @@
+<?php get_header() ?>
+    <?php get_template_part('parts/home/banner-home') ?>
+    <?php get_template_part('parts/home/equipe-home') ?>
+    <?php get_template_part('parts/home/atuacao') ?>
+    <?php get_template_part('parts/home/blog') ?>
+    <?php get_template_part('parts/home/midias') ?>
+    <?php get_template_part('parts/home/contact-home') ?>
+    <?php get_template_part('parts/home/mapa') ?>
+<?php get_footer() ?>

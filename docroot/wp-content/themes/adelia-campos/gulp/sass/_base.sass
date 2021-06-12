@@ -1,0 +1,65 @@
+html 
+    // overflow-x: hidden
+    // scroll-behavior: smooth
+
+    @media screen and ( $break-sm )
+        overflow-x: hidden
+
+html,body
+    height: 100%
+    // overflow-x: hidden
+    //----------
+    font-style: normal
+    font-weight: 300
+    // line-height: 33px
+    line-height: 19px
+    font-size: 14px
+    text-align: left
+    font-family: 'Montserrat', sans-serif
+    //----------
+    -moz-osx-font-smoothing: grayscale
+    -webkit-font-smoothing: antialiased
+    // ----
+    color: #000
+
+h1,h2,h3,h4,h5
+    margin: 0
+    color: $blue
+
+    span
+        color: $white
+
+header
+    display: block
+    position: relative
+
+// main 
+//     position: relative
+//     height: 100% 
+//     width: 100%
+
+strong
+    font-weight: bold
+
+.inner
+    padding-top: $inner
+    padding-bottom: $inner
+
+.btn-center
+    position: relative
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+
+    &__blog
+        margin-top: 35px
+
+.gradient-banner
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(0deg, rgba(22,40,54,0.9640231092436975) 50%, rgba(255,255,255,1) 100%)
+    z-index: 1

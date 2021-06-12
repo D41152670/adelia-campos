@@ -1,0 +1,275 @@
+.menu-scroll
+    background-color: $blue
+    animation: fadeIn 1s
+
+    .top-contact
+        padding-top: 19px
+
+.header-site
+    height: 80px
+    display: flex
+    align-items: center
+
+    @media ($break-xs)
+        padding-top: 20px
+        padding-bottom: 20px
+    
+#topoSite
+    width: 98%
+    z-index: 3
+
+    @media screen and ($break-md)
+        display: none
+
+//Menu Desktop
+.menu-fixo
+    position: fixed
+    transition: all .5s
+    z-index: 99
+
+.main-menu
+    position: relative
+    width: 100%
+    display: flex
+    align-items: center
+    padding: 15px 0
+
+.header
+    display: none
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+
+    @media screen and ( $break-lg )
+        display: flex
+
+    @media screen and ( $break-xl )
+        display: flex
+
+    &-logo
+        width: 100%
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        position: relative
+        z-index: 11
+
+        @media screen and ( $break-md )
+            justify-content: flex-start
+
+        @media screen and ( $break-lg )
+            width: 15%
+        @media screen and ( $break-1366 )
+            width: 20%
+    
+    &-menu
+        width: 81%
+        margin-right: -15px
+        z-index: 2
+
+        &.menu-desk
+            display: none
+
+            @media screen and ($break-md)
+                display: block
+
+            @media screen and ( $break-lg )
+                width: 85%
+                display: flex
+                align-items: center
+                justify-content: space-around
+
+            @media screen and ( $break-1366 )
+                width: 80%
+
+        &__social
+            display: flex
+            justify-content: flex-end
+            margin-bottom: 15px
+
+            &-menu
+                display: flex
+                list-style: none
+                padding: 0
+                margin: 0
+
+                &-link
+                    padding-left: 15px
+                    padding-right: 15px
+                    color: $white
+                    transition: ease-in .3s
+
+                    &:hover
+                        text-decoration: none
+                        color: $red
+// MENU
+.navbar-site
+    display: flex
+    width: 100%
+    // align-items: center
+    // justify-content: center
+
+    @media screen and ( $break-lg )
+        //padding-top: 18px
+
+    &__menu
+        padding: 0
+        margin: 0
+        width: 100%
+        // 
+        display: flex
+        justify-content: center
+        // flex-direction: column
+        // 
+        list-style: none
+
+        @media screen and ( $break-lg )
+            width: 75%
+
+        @media screen and ( $break-1366 )
+            width: 75%
+
+    &__link
+        padding-left: 15px
+        padding-right: 15px
+        color: $white
+        font-style: normal
+        // font-weight: 600;
+        font-size: 18px
+        transition: ease-in .3s
+
+        @media screen and ( $break-lg )
+            font-size: 14px
+
+        &:hover
+            color: $red
+            text-decoration: none
+
+.menu-site
+    position: relative
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    padding: 0
+
+    @media screen and ( $break-lg )
+        display: none
+
+.menu-ativo
+    overflow: hidden
+
+.logo
+    position: relative
+    width: 75%
+    z-index: 11
+
+.btn-menu-responsive
+    position: absolute
+    top: 10%
+    right: 20px
+    width: 40px
+    height: 40px
+    background-color: transparent
+    border: transparent
+    cursor: pointer
+    // transform: translateY(-50%)
+    z-index: 200
+
+    .icon-bar
+        height: 2px
+        width: 35px
+        background-color: $white
+        position: absolute
+        top: 52%
+        left: 50%
+        transform: translate(-50%, -50%)
+        transition: background .1s linear .3s
+
+        &::after, &::before
+            content: ''
+            position: absolute
+            left: 0
+            height: 2px
+            width: 100%
+            background-color: $white
+
+        &::after
+            bottom: -10px
+            transition: bottom .3s ease-in-out .4s, transform .3s ease-in-out
+
+        &::before
+            top: -10px
+            transition: top .3s ease-in-out .4s, transform .3s ease-in-out
+    
+    &.openMenu
+        .icon-bar
+            background-color: transparent
+            &::before
+                top: 0
+                transform: rotate(-45deg)
+                transition: top .3s ease-in-out, transform .3s ease-in-out .4s
+                background-color: white
+            
+            &:after
+                bottom: 0
+                transform: rotate(45deg)
+                transition: bottom .3s ease-in-out, transform .3s ease-in-out .4s
+                background-color: white
+
+.body-menu-responsive
+    position: fixed
+    width: 100%
+    height: 100%
+    background-color: $blue
+    top: 0px
+    z-index: 10
+    right: -100%
+    display: flex
+    align-items: center
+    justify-content: center
+    transition: right .5s
+
+    &.open
+        right: 0
+
+.lista-menu
+    list-style: none
+    padding: 0px
+    // margin: 200px 20px
+    width: 100%
+
+    li:not(:last-child)
+        margin-bottom: 15px
+    li
+        a.nav-link
+            padding-left: 15px
+            padding-right: 15px
+            color: $white
+            font-style: normal
+            // font-weight: 600;
+            font-size: 18px
+            transition: ease-in .3s
+            
+            &:hover
+                text-decoration: none
+                color: $red
+
+.top-contact
+    position: absolute
+    top: 0
+    right: 10%
+    background-color: $red
+    border-bottom-left-radius: 12px
+    border-bottom-right-radius: 12px
+
+    @media screen and ( $break-lg )
+        right: 5%
+        padding-top: 30px
+
+    @media screen and ( $break-1880 )
+        right: 21%
+        padding-top: 39px 
+        
+

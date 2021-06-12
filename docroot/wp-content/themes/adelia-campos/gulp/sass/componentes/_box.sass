@@ -1,0 +1,54 @@
+.main-box
+  background: #F2F2F2
+  border-radius: 8px
+  display: flex
+  height: 301px
+  align-items: center
+  justify-content: center
+  padding: 15px 30px
+  flex-direction: column
+
+  &__link
+
+    &:hover
+      text-decoration: none
+  
+  h3
+    font-style: normal
+    font-weight: bold
+    font-size: 18px
+    line-height: 22px
+    text-align: center
+    letter-spacing: -0.005em
+    color: #4E4B59
+    margin-bottom: 30px
+
+    &:hover
+      text-decoration: none
+    
+  h4
+    color: $red
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 150%
+    margin-bottom: 30px
+
+  &__equipe
+    height: auto
+    padding: 30px
+    color: #7A7786
+    text-decoration: none
+    transition-duration: 1s
+
+    &:hover
+      color: #7A7786
+      text-decoration: none
+
+      .main-box__image
+        filter: grayscale(0)
+
+  &__image
+    transition-duration: 1s
+    margin-bottom: 30px
+    filter: grayscale(1)

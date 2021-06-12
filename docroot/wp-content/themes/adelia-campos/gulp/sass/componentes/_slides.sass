@@ -1,0 +1,189 @@
+.slide-equipe
+    position: relative
+
+    &:before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 423px
+        height: 423px
+        background-image: url(../images/ellipse.png)
+        background-position: center top
+        background-repeat: no-repeat
+        background-size: 423px 423px
+
+        @media ( $break-xs )
+            content: none
+
+.swiper-equipe
+    position: relative        
+
+    .swiper-wrapper
+        padding-top: 30px
+        padding-bottom: 30px
+
+    .swiper-slide
+        position: relative
+        // width: 67% !important     
+        background-color: white
+        border-radius: 6px
+
+        // &:nth-child(1)
+        //     margin-left: 30px
+
+        .card-team
+            position: relative
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+            flex-direction: column
+            background-color: $white
+            padding: 30px
+            border-radius: 6px
+
+            .team-title
+                font-size: 12px
+                font-weight: 400
+                line-height: 18px
+                color: $red
+                margin-bottom: 20px
+
+            .team-picture
+                margin-bottom: 15px
+
+            .team-name
+                font-size: 14px
+                font-weight: 700
+                line-height: 17px
+                color: $darkGrey
+
+            .team-register
+                font-size: 12px
+                font-weight: 400
+                line-height: 18px
+                color: $grey
+
+.left-arrow
+    background-image: url(../images/left-arrow.png)
+    background-position: center top
+    background-repeat: no-repeat
+    background-size: 47px 52px
+    width: 47px
+    height: 52px
+    left: 2%
+
+    @media screen and ( $break-lg )
+        left: -1%
+
+    //@media screen and ($break-xs)
+
+
+.swiper-action
+
+    .header-action
+        position: relative
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex-direction: row
+        background-color: $red
+        border-radius: 12px
+        padding: 34px 17px
+
+        .icon-action
+            position: relative
+            width: 20%
+            display: block
+
+        .title-action
+            position: relative
+            width: 80%
+            display: block
+
+        p
+            font-size: 14px
+            font-weight: 500
+            line-height: 20px
+            margin-bottom: 0
+            color: $white
+
+.swiper-content-action
+    margin-top: 30px
+
+    .content-action
+
+        p
+            font-size: 16px
+            font-weight: 400
+            line-height: 24px
+            color: $grey
+            margin-top: 15px
+
+        ul
+            padding-left: 0
+
+            li
+                position: relative
+                list-style: none
+                padding-left: 35px
+                font-size: 16px
+                font-weight: 400
+                line-height: 24px
+                color: $grey
+                margin-bottom: 25px
+
+                &::before
+                    content: ''
+                    position: absolute
+                    top: 19%
+                    left: 0
+                    width: 17px
+                    height: 12px
+                    background-image: url('../images/check.png')
+                    background-position: center top
+                    background-repeat: no-repeat
+                    background-size: 17px 12px
+
+.swiper-blog
+
+    .swiper-wrapper
+        padding: 30px 0
+
+    .content-card-blog
+        background-color: $cardBlog
+        padding: 20px 7px
+        border-bottom-left-radius: 5px
+        border-bottom-right-radius: 5px
+
+    .category
+        position: relative
+        width: 21%
+
+    .tag-category
+        background-color: $tag
+        color: $white
+        border-radius: 6px
+        padding: 6px
+
+        p
+            font-size: 10px
+            font-weight: 500
+            line-height: 16px
+            margin-bottom: 0
+
+    .desc-blog
+
+        p
+            font-size: 16px
+            font-weight: 500
+            line-height: 25px
+            color: $grey
+            margin-top: 10px
+
+            &.date
+                font-size: 14px
+                font-weight: 700
+                line-height: 16px
+                color: #848484

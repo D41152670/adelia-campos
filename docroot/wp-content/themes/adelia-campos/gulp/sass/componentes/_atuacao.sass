@@ -1,0 +1,75 @@
+.area-atuacao
+  display: flex
+  justify-content: center
+  align-items: center
+
+  @media screen and ($break-xs)
+    flex-direction: column
+
+  &__slider
+    width: 100%
+
+  &__navegacao
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+
+  &__links
+    width: 168px;
+    height: 88px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 30px -5px rgba(207, 209, 230, 0.45);
+    border-radius: 12px;
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 15px
+    transition-duration: .7s
+    color: $red
+
+    @media screen and ($break-xs)
+      width: 100%
+
+    img
+      margin-right: 10px
+
+    &--active, &:hover
+      background-color: $red
+      color: white
+      text-decoration: none
+      color: white
+
+      .area-atuacao__links--images
+        display: none
+
+      .area-atuacao__links--images--hover
+        display: block
+
+    &--images
+      display: block
+
+      &--hover
+        display: none
+
+  &__content
+    padding-left: 30px
+    font-size: 18px;
+    display: none
+    flex-direction: column
+    justify-content: flex-start
+    align-items: baseline
+    color: #777777
+
+    @media ($break-xs)
+      padding-left: 0
+
+    &--active
+      display: flex
+
+    h4
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 150%;
+      color: #162836;
+      margin-bottom: 15px
