@@ -27,10 +27,10 @@
             <div class="header-menu menu-desk">
                 <nav class="navbar-site">
                     <ul class="navbar-site__menu">
-                        <li><a href="#" class="navbar-site__link">Institucional</a></li>
+                        <li><a href="<?= esc_url(home_url('institucional')) ?>" class="navbar-site__link">Institucional</a></li>
                         <li><a href="<?= esc_url(home_url('equipe')) ?>" class="navbar-site__link">Equipe</a></li>
                         <li><a href="<?= esc_url(home_url('atuacao')) ?>" class="navbar-site__link">Áreas de atuação</a></li>
-                        <li><a href="#" target="_blank" class="navbar-site__link">Blog</a></li>
+                        <li><a href="<?= esc_url(home_url('blog')) ?>"  class="navbar-site__link">Blog</a></li>
                         <li><a href="#" target="_blank" class="navbar-site__link">Legislação</a></li>
                     </ul>
                 </nav>

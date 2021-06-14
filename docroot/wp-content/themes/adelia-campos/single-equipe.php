@@ -1,5 +1,4 @@
 <?php
-/* Template name: Equipe */
 get_header();
 get_template_part('parts/pages/page-header');
 get_template_part('parts/pages/breadcrumb');

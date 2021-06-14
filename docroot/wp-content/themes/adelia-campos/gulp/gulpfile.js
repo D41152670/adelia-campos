@@ -189,11 +189,12 @@ gulp.task('concat-js',function(){
  */
 
 gulp.task('watch', function(){
-  gulp.watch('sass/*.sass', ['sass-general','sass-ie9']);
-  gulp.watch('sass/head-comments/comments.css', ['sass-general','sass-ie9']);
-  gulp.watch('sass/**/*.sass', ['sass-general','sass-ie9']);
-  gulp.watch('js/*.js', ['concat-js']);
-  gulp.watch('../assets/images/icons/*.svg',['iconfont'])
+    gulp.watch('sass/*.sass', ['sass-general','sass-ie9']);
+    gulp.watch('sass/head-comments/comments.css', ['sass-general','sass-ie9']);
+    gulp.watch('sass/**/*.sass', ['sass-general','sass-ie9']);
+    gulp.watch('sass/**/*.scss', ['sass-general','sass-ie9']);
+    gulp.watch('js/*.js', ['concat-js']);
+    gulp.watch('../assets/images/icons/*.svg',['iconfont'])
 })
 
 /**

@@ -1,0 +1,54 @@
+.input-tabs { display: none; }
+.input-tabs + label { display: inline-block }
+
+.input-tabs ~ .tab { display: none }
+#tab1:checked ~ .tab.content1,
+#tab2:checked ~ .tab.content2,
+#tab3:checked ~ .tab.content3,
+#tab4:checked ~ .tab.content4,
+#tab5:checked ~ .tab.content5 { display: block; }
+
+.input-tabs + label {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  /* or 125% */
+  text-align: center;
+  letter-spacing: -0.01em;
+  color: #666666;
+  padding: 15px 15px;
+  //border-right: white solid 1px;
+  //border-left: white solid 1px;
+  cursor: pointer;
+  margin-bottom: 0;
+  background-color: #F2F2F2;
+
+  @media screen and ($break-xs) {
+    width: 100%;
+  }
+}
+.input-tabs:checked + label {
+  background-color: #777777;
+  color: white;
+  text-decoration: none;
+}
+
+//.input-tabs ~ .tab {
+//  //border-right: white solid 1px
+//  //border-left: white solid 1px
+//  //border-top: 1px solid #999;
+//  //padding: 12px;
+//}
+
+.tab-content{
+  background-color: #F2F2F2;
+  padding: 15px;
+  border-top: #777777 solid 5px;
+}
+
+.main-tab__bg{
+  background-color: #F2F2F2;
+  margin-bottom: $inner;
+  margin-top: $inner;
+}

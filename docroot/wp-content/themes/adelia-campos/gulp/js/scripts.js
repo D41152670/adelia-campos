@@ -170,20 +170,20 @@ $('[data-fancybox]').fancybox({
     }
 });
 
-$('a[href*="#"]:not([href="#"])').click(function () {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-        var target = $(this.hash);
-        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-        if (target.length) {
-            // $("#menu-menu-principal .active").removeClass('active');
-            // navbar-collapse collapse in
-            $('html, body').animate({
-                scrollTop: target.offset().top - 0
-            }, 1000);
-            return false;
-        }
-    }
-});
+// $('a[href*="#"]:not([href="#"])').click(function () {
+//     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+//         var target = $(this.hash);
+//         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+//         if (target.length) {
+//             // $("#menu-menu-principal .active").removeClass('active');
+//             // navbar-collapse collapse in
+//             $('html, body').animate({
+//                 scrollTop: target.offset().top - 0
+//             }, 1000);
+//             return false;
+//         }
+//     }
+// });
 //
 let atuacaoMenu = document.querySelectorAll('.area-atuacao__js');
 let atuacaoContent = document.querySelectorAll('.area-atuacao__content');
@@ -205,7 +205,19 @@ function displayContent(idContent){
 atuacaoMenu.forEach(function(element, index){
     element.addEventListener('click', function(e){
         let target = this.dataset.target;
+        let elementHtml = this;
+        removeActiveButton(elementHtml);
         displayContent(target);
         e.preventDefault();
     })
 });
+//
+function removeActiveButton(elementHtml){
+    // let target = this.dataset.target;
+    atuacaoMenu.forEach( function(element, index){
+        if( element.classList.contains('area-atuacao__links--active') ){
+            element.classList.remove('area-atuacao__links--active');
+        }
+        elementHtml.classList.add('area-atuacao__links--active');
+    })
+}

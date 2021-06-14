@@ -3,6 +3,7 @@ global $wpdb;
 
 require ('functions/includes.php');
 require ('functions/wp_bootstrap_menuwalker.php');
+require ('functions/acf_block.php');
 //  Para utilizar a passagem de valor entre os templates parts utilziar include(locate_template('parts/arquivo-part.php'));
 // require_once('functions/add-grid-coluns.php');
 // require ('functions/translate-acf-date.php');
@@ -10,7 +11,7 @@ require ('functions/wp_bootstrap_menuwalker.php');
 // require ('functions/nav_menu_principal.php');
 // require ('functions/add_options_page.php');
 // require('functions/opcoes-thema.php');
-// include ('functions/acf_fields.php');
+ include ('functions/acf_fields.php');
 // require ('functions/remove-menus.php');
 // require ('functions/contabiliza-post-acessado.php');
 // require ('functions/ajax-search-results.php');
