@@ -49,10 +49,10 @@ var equipe = new Swiper('.swiper-equipe', {
     // centeredSlides: true,    
     breakpoints: {
       360: {
-        slidesPerView: 1.5,
+        slidesPerView: 1,
       },
       576: {
-        slidesPerView: 2.5,
+        slidesPerView: 1.3,
       },
       640: {
         slidesPerView: 2.5,
@@ -114,21 +114,21 @@ var swiper = new Swiper(".swiper-blog", {
         disableOnInteraction: false,
     },
     breakpoints: {
-      370: {
-        slidesPerView: 1.5,
-      },
       576: {
-        slidesPerView: 2.5,
+        slidesPerView: 1,
       },
+      // 576: {
+      //   slidesPerView: 2.5,
+      // },
       640: {
-        slidesPerView: 2.5,
+        slidesPerView: 2,
       },
       768: {
-        slidesPerView: 2.5,
+        slidesPerView: 2,
         spaceBetween: 40,
       },
       992: {
-        slidesPerView: 2.5,
+        slidesPerView: 3,
       },
       1024: {
         slidesPerView: 5,

@@ -9732,6 +9732,9 @@ strong {
     background-color: transparent;
     border: #162836 1px solid; }
 
+.img-mapa {
+  width: 100%; }
+
 footer {
   position: relative;
   width: 100%;
@@ -9934,6 +9937,10 @@ footer {
     line-height: 24px;
     opacity: 0.8;
     margin-bottom: 35px; }
+  @media screen and (max-width: 570px) {
+    .content-banner {
+      width: 100%;
+      text-align: center; } }
 
 .area-atuacao {
   display: -webkit-box;
@@ -9967,6 +9974,7 @@ footer {
   .area-atuacao__links {
     width: 168px;
     height: 88px;
+    padding-left: 15px;
     background: #FFFFFF;
     -webkit-box-shadow: 0px 10px 30px -5px rgba(207, 209, 230, 0.45);
             box-shadow: 0px 10px 30px -5px rgba(207, 209, 230, 0.45);
@@ -9977,9 +9985,9 @@ footer {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     margin-bottom: 15px;
     -webkit-transition-duration: .7s;
          -o-transition-duration: .7s;
@@ -10020,7 +10028,9 @@ footer {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    color: #777777; }
+    color: #777777;
+    line-height: 160%;
+    letter-spacing: -0.01em; }
     @media (max-width: 570px) {
       .area-atuacao__content {
         padding-left: 0; } }
@@ -10252,7 +10262,7 @@ footer {
     line-height: 130%; }
     @media (max-width: 570px) {
       .title__banner {
-        font-size: 44px;
+        font-size: 30px;
         line-height: 40px; } }
   .title__section {
     font-size: 14px;
@@ -10339,8 +10349,7 @@ footer {
 .swiper-equipe {
   position: relative; }
   .swiper-equipe .swiper-wrapper {
-    padding-top: 30px;
-    padding-bottom: 30px; }
+    height: 280px; }
   .swiper-equipe .swiper-slide {
     position: relative;
     background-color: white;
@@ -10395,7 +10404,7 @@ footer {
   left: 2%; }
   @media screen and (min-width: 922px) {
     .left-arrow {
-      left: -1%; } }
+      left: -3%; } }
 
 .swiper-action .header-action {
   position: relative;
@@ -10659,13 +10668,16 @@ footer {
   display: block; }
   .image-blog__desktop {
     width: 45%; }
+  @media screen and (max-width: 570px) {
+    .image-blog img {
+      width: 100%; } }
 
 .content-card-blog {
   position: relative;
   width: 100%;
   display: block;
   background-color: #FAFAFA;
-  padding: 20px 7px;
+  padding: 20px 20px;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px; }
   .content-card-blog__desktop {

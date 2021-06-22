@@ -16,11 +16,11 @@
               </div>
 
               <div class="content-card-blog">
-                <div class="category">
-                  <div class="tag-category">
-                    <p>Eventos</p>
-                  </div>
-                </div>
+<!--                <div class="category">-->
+<!--                  <div class="tag-category">-->
+<!--                    <p>Eventos</p>-->
+<!--                  </div>-->
+<!--                </div>-->
 
                 <div class="desc-blog">
                   <h3 class="title title__red title__card-blog">O Guia Completo de Gestão para Logísticas de Advocacia</h3>

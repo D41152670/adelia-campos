@@ -5,8 +5,8 @@ $argsAtuacao = array(
 );
 //
 $loopAtuacao = get_posts($argsAtuacao);
+$i = 0;
 if(!wp_is_mobile()):
-  $i = 0;
   ?>
   <div class="area-atuacao__navegacao">
     <?php foreach ($loopAtuacao as $post): setup_postdata($post) ?>
@@ -38,7 +38,10 @@ if(!wp_is_mobile()):
                 </div>
             </a>
         </div>
-      <?php endforeach; ?>
+      <?php
+        $i++;
+      endforeach;
+      ?>
     </div>
   </div>
 <?php endif ?>

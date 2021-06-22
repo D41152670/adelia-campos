@@ -2,9 +2,9 @@
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="box-title box-title__media">
+                <div class="box-title box-title__media text-center">
                     <h2 class="title title__red title__section">Mídias Sociais</h2>
-                    <h3 class="title__section--subtitle">Pretium sagittis nullam lorem ipsum dolor turpis</h3>
+                    <h3 class="title__section--subtitle">Siga e fique por dentro das nossas atualizações</h3>
                 </div>
             </div>
         </div>
