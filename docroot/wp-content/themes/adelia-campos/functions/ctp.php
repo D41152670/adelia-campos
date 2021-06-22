@@ -54,4 +54,25 @@ function create_posttype(){
     )
   );
 
+  register_post_type('legislacao',
+    array(
+      'labels' => array(
+        'name' => __( 'Legislação', 'Microcity' ),
+        'singular_name' => __( 'Legislação', 'Microcity' )
+      ),
+      'show_in_rest' => true,
+      'public' => true,
+      'hierarchical' => true,
+      'has_archive' => 'legislacao',
+      'menu_position' => 5,
+      'rewrite' => array('slug' => 'legislacao'),
+      'supports' => array(
+        'title',
+        'editor',
+        'page-attributes',
+        'thumbnail'
+      )
+    )
+  );
+
 }

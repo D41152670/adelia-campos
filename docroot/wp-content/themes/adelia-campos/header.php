@@ -31,12 +31,12 @@
                         <li><a href="<?= esc_url(home_url('equipe')) ?>" class="navbar-site__link">Equipe</a></li>
                         <li><a href="<?= esc_url(home_url('atuacao')) ?>" class="navbar-site__link">Áreas de atuação</a></li>
                         <li><a href="<?= esc_url(home_url('blog')) ?>"  class="navbar-site__link">Blog</a></li>
-                        <li><a href="#" target="_blank" class="navbar-site__link">Legislação</a></li>
+                        <li><a href="<?= esc_url(home_url('legislacao')) ?>" class="navbar-site__link">Legislação</a></li>
                     </ul>
                 </nav>
 
                 <div class="top-contact">
-                    <a href="#" target="_blank" class="btn">
+                    <a href="<?= esc_url(home_url('legislacao')) ?>" class="btn">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-mail.png" alt="" class="img-fluid"> Entre em contato
                     </a>
                 </div>
@@ -52,11 +52,11 @@
                 <nav class="menu-principal">
                     <div class="body-menu-responsive">
                         <ul class="lista-menu">
-                            <li><a href="#" class="navbar-site__link">Institucional</a></li>
-                            <li><a href="#" class="navbar-site__link">Equipe</a></li>
-                            <li><a href="#" class="navbar-site__link">Áreas de atuação</a></li>
-                            <li><a href="#" target="_blank" class="navbar-site__link">Blog</a></li>
-                            <li><a href="#" target="_blank" class="navbar-site__link">Legislação</a></li>
+                            <li><a href="<?= esc_url(home_url('institucional')) ?>" class="navbar-site__link">Institucional</a></li>
+                            <li><a href="<?= esc_url(home_url('equipe')) ?>" class="navbar-site__link">Equipe</a></li>
+                            <li><a href="<?= esc_url(home_url('atuacao')) ?>" class="navbar-site__link">Áreas de atuação</a></li>
+                            <li><a href="<?= esc_url(home_url('blog')) ?>"  class="navbar-site__link">Blog</a></li>
+                            <li><a href="<?= esc_url(home_url('legislacao')) ?>" class="navbar-site__link">Legislação</a></li>
                         </ul>
                     </div>
                 </nav>

@@ -8,7 +8,7 @@ foreach ($loopEquipe as $post): setup_postdata($post) ?>
     <div class="main-box main-box__equipe">
       <h4 class="">Advogada</h4>
       <div class="main-box__image">
-        <img src="<?= get_template_directory_uri() ?>/assets/images/equipe1.png" alt="" class="img-fluid">
+        <img src="<?= get_the_post_thumbnail_url() ?>" alt="" class="img-fluid">
       </div>
       <h3 class="">
         Adélia Campos

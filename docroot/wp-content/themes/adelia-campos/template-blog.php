@@ -7,10 +7,10 @@ get_template_part('parts/pages/breadcrumb')
   <section class="content-institutional">
     <div class="container">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-9">
           <?php get_template_part('parts/loop/loop-blog') ?>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <?php get_sidebar() ?>
         </div>
       </div>

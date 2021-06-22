@@ -15,36 +15,26 @@
                 <div class="slide-equipe">
                     <div class="swiper-container swiper-equipe">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="card-team">
-                                    <h3 class="team-title">Advogada</h3
-                                    >
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/team.png" alt="" class="img-fluid team-picture">
+                          <?php
+                          $argEquipe = array(
+                            'post_type' => 'equipe'
+                          );
+                          $loopEquipe = get_posts($argEquipe);
+                          foreach ($loopEquipe as $post){ setup_postdata($post);
+                          ?>
+                          <div class="swiper-slide">
+                              <a href="<?php the_permalink(); ?>" class="card-team">
+                                  <h3 class="team-title">Advogada</h3>
+                                  <img src="<?= get_the_post_thumbnail_url(); ?>" alt="" class="img-fluid team-picture" style="height: 100px">
 
-                                    <p class="team-name">Adélia Campos</p>
-                                    <p class="team-register">OAB-MG 107.153</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card-team">
-                                    <h3 class="team-title">Advogada</h3
-                                    >
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/team.png" alt="" class="img-fluid team-picture">
-
-                                    <p class="team-name">Adélia Campos</p>
-                                    <p class="team-register">OAB-MG 107.153</p>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="card-team">
-                                    <h3 class="team-title">Advogada</h3
-                                    >
-                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/team.png" alt="" class="img-fluid team-picture">
-
-                                    <p class="team-name">Adélia Campos</p>
-                                    <p class="team-register">OAB-MG 107.153</p>
-                                </div>
-                            </div>
+                                  <p class="team-name"><?php the_title() ?></p>
+                                  <p class="team-register"><?= get_field('registro_oab') ?></p>
+                              </a>
+                          </div>
+                            <?php
+                          }
+                          wp_reset_postdata();
+                          ?>
                         </div>
                     </div>
 

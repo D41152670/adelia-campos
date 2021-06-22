@@ -9392,8 +9392,11 @@ strong {
 .icon-phone:before {
   content: "\E005"; }
 
-.icon-youtube:before {
+.icon-search-solid:before {
   content: "\E006"; }
+
+.icon-youtube:before {
+  content: "\E007"; }
 
 .menu-scroll {
   background-color: #162836;
@@ -9723,6 +9726,11 @@ strong {
     .top-contact {
       right: 21%;
       padding-top: 39px; } }
+  .top-contact:hover {
+    background-color: #162836; }
+  .top-contact .btn:hover {
+    background-color: transparent;
+    border: #162836 1px solid; }
 
 footer {
   position: relative;
@@ -9774,24 +9782,27 @@ footer {
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  border-top: 1px solid #777777;
+  margin-top: 20px;
+  padding-top: 20px; }
+  .social-footer__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .social-footer__list li {
+      margin-right: 20px; }
+      .social-footer__list li:last-child {
+        margin-right: 0; }
 
-.list-social {
+.list-inline-item {
   position: relative;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 45px 0 0; }
-  @media screen and (min-width: 922px) {
-    .list-social {
-      width: 40%; } }
+  margin-right: 20px; }
+  .list-inline-item:last-child {
+    margin-right: 0; }
 
 .input-tabs {
   display: none; }
@@ -9841,6 +9852,35 @@ footer {
   margin-bottom: 50px;
   margin-top: 50px; }
 
+.main-sidebar__container {
+  background: #F2F2F2;
+  border-radius: 8px;
+  padding: 20px;
+  color: #666666; }
+  .main-sidebar__container .main-sidebar__navigation a {
+    color: #666666; }
+
+.main-sidebar__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: #162836;
+  margin-bottom: 20px;
+  text-transform: capitalize; }
+
+.main-sidebar__input {
+  height: 47px;
+  background-color: #F2F2F2; }
+
+.main-sidebar__btn {
+  background-color: #F2F2F2;
+  color: #666666 !important;
+  border-top: 1px solid #ced4da !important;
+  border-right: 1px solid #ced4da !important;
+  border-bottom: 1px solid #ced4da !important; }
+
 .banner {
   position: relative;
   width: 100%;
@@ -9877,7 +9917,8 @@ footer {
 
 .content-banner {
   position: relative;
-  width: 100%;
+  width: 55%;
+  margin: auto;
   display: block;
   z-index: 1000; }
   @media screen and (min-width: 768px) {
@@ -9944,6 +9985,8 @@ footer {
          -o-transition-duration: .7s;
             transition-duration: .7s;
     color: #A43234; }
+    .area-atuacao__links--sidebar {
+      width: 100%; }
     @media screen and (max-width: 570px) {
       .area-atuacao__links {
         width: 100%; } }
@@ -10001,6 +10044,15 @@ footer {
   letter-spacing: -0.01em;
   color: #777777;
   margin-bottom: 30px; }
+
+.main-section__legislacao {
+  border-bottom: 1px solid #777777;
+  padding-bottom: 20px; }
+  .main-section__legislacao a {
+    color: #777777; }
+    .main-section__legislacao a:hover {
+      text-decoration: none;
+      color: #A43234; }
 
 .main-accordion {
   margin-bottom: 20px; }
@@ -10177,6 +10229,15 @@ footer {
     font-size: 20px;
     line-height: 150%;
     margin-bottom: 10px; }
+  .main-title__legislacao {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 160%;
+    /* or 38px */
+    letter-spacing: -0.01em;
+    /* Color | Blue */
+    color: #162836; }
 
 .title {
   color: #FFFFFF;
@@ -10303,6 +10364,8 @@ footer {
       background-color: #FFFFFF;
       padding: 30px;
       border-radius: 6px; }
+      .swiper-equipe .swiper-slide .card-team:hover {
+        text-decoration: none; }
       .swiper-equipe .swiper-slide .card-team .team-title {
         font-size: 12px;
         font-weight: 400;

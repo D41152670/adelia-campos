@@ -123,39 +123,28 @@ Modo de uso:
 /* ----------------------------------------------------- */
 /* Registrando uma sidebar */
 /* ----------------------------------------------------- */
-// if ( function_exists('register_sidebar') )
-//     register_sidebar(array(
-//         'name' => 'Sidebar',
-//         'id'  => 'sidebar',
-//         'before_widget' => '<div class="main-sidebar__container">',
-//         'after_widget' => '</div></div>',
-//         'before_title' => '<div class="main-sidebar__title">',
-//         'after_title' => '</div><div class="main-sidebar__navigation">',
-//     )
-// );
+ if ( function_exists('register_sidebar') )
+     register_sidebar(array(
+         'name' => 'Sidebar',
+         'id'  => 'sidebar',
+         'before_widget' => '<div class="main-sidebar__container mb-4">',
+         'after_widget' => '</div></div>',
+         'before_title' => '<div class="main-sidebar__title">',
+         'after_title' => '</div><div class="main-sidebar__navigation">',
+     )
+ );
 
-if ( function_exists('register_sidebar') )
-    register_sidebar(array(
-        'name' => 'Rodape 1',
-        'id'  => 'rodape-1',
-        'description' => 'Apenas para menu',
-        'before_widget' => '<div class="colum-footer">',
-        'after_widget' => '</div>',
-        'before_title' => '<ul>',
-        'after_title' => '</ul>',
-    )
-);
-//
-// if ( function_exists('register_sidebar') )
-//     register_sidebar(array(
-//         'name' => 'Rodape 4',
-//         'id'  => 'rodape-4',
-//         'before_widget' => '<div class="main-footer__contact-info-container">',
-//         'after_widget' => '</div>',
-//         'before_title' => '<div class="main-footer__contact-info main-footer__contact-info--highlight">',
-//         'after_title' => '</div>',
-//     )
-// );
+//if ( function_exists('register_sidebar') )
+//    register_sidebar(array(
+//        'name' => 'Rodape 1',
+//        'id'  => 'rodape-1',
+//        'description' => 'Apenas para menu',
+//        'before_widget' => '<div class="colum-footer">',
+//        'after_widget' => '</div>',
+//        'before_title' => '<ul>',
+//        'after_title' => '</ul>',
+//    )
+//);
 
 /*
 Modo de uso:
