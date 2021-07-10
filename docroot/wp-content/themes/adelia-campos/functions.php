@@ -9,7 +9,7 @@ require ('functions/acf_block.php');
 // require ('functions/translate-acf-date.php');
  require ('functions/ctp.php');
 // require ('functions/nav_menu_principal.php');
-// require ('functions/add_options_page.php');
+ require ('functions/add_options_page.php');
 // require('functions/opcoes-thema.php');
  include ('functions/acf_fields.php');
 // require ('functions/remove-menus.php');

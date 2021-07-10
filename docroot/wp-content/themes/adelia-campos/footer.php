@@ -28,10 +28,10 @@
         </div>
         <div class="social-footer">
             <ul class="social-footer__list">
-                <li class=""><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.png" alt=""></a></li>
-                <li class=""><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/linkedin.png" alt=""></a></li>
-                <li class=""><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.png" alt=""></a></li>
-                <li class=""><a href="#"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/youtube.png" alt=""></a></li>
+                <li class=""><a href="<?= get_field('facebook', 'option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.png" alt=""></a></li>
+                <li class=""><a href="<?= get_field('linkedin', 'option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/linkedin.png" alt=""></a></li>
+                <li class=""><a href="<?= get_field('instagram', 'option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.png" alt=""></a></li>
+                <li class=""><a href="<?= get_field('youtube', 'option') ?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/youtube.png" alt=""></a></li>
             </ul>
         </div>
     </div>

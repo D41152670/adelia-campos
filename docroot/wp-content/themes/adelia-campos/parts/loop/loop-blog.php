@@ -9,7 +9,7 @@ if($loopBlog->have_posts()){
   echo "<div class='row'>";
   while($loopBlog->have_posts()) { $loopBlog->the_post();
     ?>
-    <div class="col-md-6">
+    <div class="col-md-6 mb-4">
       <div class="main-box main-box__blog">
         <div class="main-box__description">
           <div class="main-box__image--blog">

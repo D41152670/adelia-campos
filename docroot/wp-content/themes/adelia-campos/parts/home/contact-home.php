@@ -1,4 +1,4 @@
-<section class="contact-home">
+<section id="contact" class="contact-home">
     <div class="container">
         <div class="row align-items-center">
             <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-6">
@@ -14,21 +14,7 @@
                     </div>
 
                     <div class="form-contact">
-                        <form>
-                            <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Nome">
-                            </div>
-
-                            <div class="mb-3">
-                                <input type="email" class="form-control" placeholder="Email">
-                            </div>
-
-                            <div class="mb-3">
-                                <input type="tel" class="form-control" placeholder="Telefone">
-                            </div>
-
-                            <button type="submit" class="btn btn__red btn-block">Entre em contato comigo</button>
-                        </form>
+                        <?= do_shortcode('[contact-form-7 id="47" title="Fale com um consultor"]') ?>
                     </div>
                 </div>
             </div>

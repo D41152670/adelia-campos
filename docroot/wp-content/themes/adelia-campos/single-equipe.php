@@ -17,7 +17,7 @@ if(have_posts()):
                 </div>
                 <div class="col-md-9">
                     <h1 class="main-title main-title__single">
-                        Adélia Campos
+                        <?php the_title() ?>
                         <?php if(get_field('registro_oab')): ?>
                         <small><?= get_field('registro_oab') ?></small>
                         <?php endif; ?>

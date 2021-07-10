@@ -23,7 +23,7 @@
                           ?>
                           <div class="swiper-slide">
                               <a href="<?php the_permalink(); ?>" class="card-team">
-                                  <h3 class="team-title">Advogada</h3>
+                                  <h3 class="team-title"><?= get_field('escolher_atuacao') ?></h3>
                                   <img src="<?= get_the_post_thumbnail_url(); ?>" alt="" class="img-fluid team-picture" style="height: 100px">
 
                                   <p class="team-name"><?php the_title() ?></p>

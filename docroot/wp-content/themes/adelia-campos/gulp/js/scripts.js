@@ -170,20 +170,21 @@ $('[data-fancybox]').fancybox({
     }
 });
 
-// $('a[href*="#"]:not([href="#"])').click(function () {
-//     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-//         var target = $(this.hash);
-//         target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-//         if (target.length) {
-//             // $("#menu-menu-principal .active").removeClass('active');
-//             // navbar-collapse collapse in
-//             $('html, body').animate({
-//                 scrollTop: target.offset().top - 0
-//             }, 1000);
-//             return false;
-//         }
-//     }
-// });
+// Scroll site
+$('a.scroll-contact[href*="#"]:not([href="#"])').click(function () {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+        if (target.length) {
+            // $("#menu-menu-principal .active").removeClass('active');
+            // navbar-collapse collapse in
+            $('html, body').animate({
+                scrollTop: target.offset().top - 90
+            }, 1500);
+            return false;
+        }
+    }
+});
 //
 let atuacaoMenu = document.querySelectorAll('.area-atuacao__js');
 let atuacaoContent = document.querySelectorAll('.area-atuacao__content');

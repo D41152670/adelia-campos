@@ -36,8 +36,9 @@
                 </nav>
 
                 <div class="top-contact">
-                    <a href="<?= esc_url(home_url('legislacao')) ?>" class="btn">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-mail.png" alt="" class="img-fluid"> Entre em contato
+                    <a href="<?= esc_url(home_url('#contact')) ?>" class="btn scroll-contact">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icon-mail.png" alt="" class="img-fluid">
+                        Entre em contato
                     </a>
                 </div>
             </div>
